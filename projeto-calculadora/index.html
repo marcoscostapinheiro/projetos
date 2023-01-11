@@ -12,33 +12,34 @@
         <section>
             <div id="calculadora">
                 <div id="tela">
+                    
                 </div>
                 <div id="botoes">
                     <div id="l1">
-                        <div class="num">7</div>
-                        <div class="num">8</div>
-                        <div class="num">9</div>
-                        <div class="operador">/</div>
-                        <div class="operador">C</div>
+                        <div class="num" onclick="addNum()">7</div>
+                        <div class="num" onclick="addNum()">8</div>
+                        <div class="num" onclick="addNum()">9</div>
+                        <div class="operador" onclick="addOp()">/</div>
+                        <div class="operador" onclick="clear()">C</div>
                     </div>
                     <div id="l2">
-                        <div class="num">4</div>
-                        <div class="num">5</div>
-                        <div class="num">6</div>
-                        <div class="operador">*</div>
-                        <div class="operador" id="potencia">^</div>
+                        <div class="num" onclick="addNum()">4</div>
+                        <div class="num" onclick="addNum()">5</div>
+                        <div class="num" onclick="addNum()">6</div>
+                        <div class="operador" onclick="addOp()">*</div>
+                        <div class="operador" id="potencia" onclick="addOp()">^</div>
                     </div>
                     <div id="l3">
-                        <div class="num">1</div>
-                        <div class="num">2</div>
-                        <div class="num">3</div>
-                        <div class="operador">-</div>
+                        <div class="num" onclick="addNum()">1</div>
+                        <div class="num" onclick="addNum()">2</div>
+                        <div class="num" onclick="addNum()">3</div>
+                        <div class="operador" onclick="addOp()">-</div>
+                        <div class="operador" id="igual" onclick="somar()">=</div>
                     </div>
                     <div id="l4">
-                        <div class="num" id="num0">0</div>
-                        <div class="operador" id="virgula">,</div>
-                        <div class="operador" id="adicao">+</div>
-                        <div class="operador" id="igual">=</div>
+                        <div class="num" id="num0" onclick="addNum()">0</div>
+                        <div class="operador" id="virgula" onclick="virgula()">,</div>
+                        <div class="operador" id="adicao" onclick="addOp()">+</div>
                     </div>
                 </div>
             </div>
