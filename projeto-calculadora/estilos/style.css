@@ -74,15 +74,21 @@ div#l4 > div#virgula{
 }
 
 div#l4 > div#adicao{
+    position: absolute;
+    left: 184px;
+    padding: 20.5px 0px;
+    width: 47px;
+    font-size: 2em;
     text-align: center;
-    padding: 10px 7px;
 }
 
 div#l4 > div#igual{
     position: absolute;
     top: 182px;
-    margin-left: 5px;
-    padding: 55.2px 13px;
+    left: 239px;
+    padding: 55px 0px;
+    width: 59px;
+    text-align: center;
 }
 
 div.num:hover{
