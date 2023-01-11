@@ -13,19 +13,19 @@ body{
 
 div#calculadora{
     position: absolute;
-    top: 50%;
+    top: 320px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -260px);
     width: 315px;
-    height: 73vh;
+    height: 495px;
     padding: 10px;
     background-color: rgb(138, 153, 158);
     border-radius: 5px;
 }
 
 div#tela{
-    width: 95.1%;
-    height: 18%;
+    width: 300px;
+    height: 90px;
     margin: 7px 0px 0px 7px;
     background-color: white;
     border-radius: 5px;
@@ -80,7 +80,7 @@ div#l4 > div#adicao{
 
 div#l4 > div#igual{
     position: absolute;
-    top: 50%;
+    top: 182px;
     margin-left: 5px;
     padding: 55.2px 13px;
 }
