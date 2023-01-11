@@ -70,8 +70,9 @@ div#l3{
 }
 
 div#l3 > div#igual{
-    height: 157px;
-    
+    position: absolute;
+    margin-left: 5px;
+    padding: 56.5px 13px;
 }
 
 div#l4{
