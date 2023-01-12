@@ -17,7 +17,7 @@ div#calculadora{
     left: 50%;
     transform: translate(-50%, -260px);
     width: 315px;
-    height: 495px;
+    height: 440px;
     padding: 10px;
     background-color: rgb(138, 153, 158);
     border-radius: 5px;
@@ -33,21 +33,9 @@ div#tela{
     text-align: left;
 }
 
-div#tela > input{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    margin-left: -1px;
-    
-}
-
-div#tela > input::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-}
-
 div#botoes{
     position: absolute;
-    top: 59%;
+    top: 61%;
     left: 55%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -56,56 +44,37 @@ div#botoes{
 div.num{
     display: inline-block;
     font-size: 3em;
-    padding: 10px 14px;
-    margin: 5px 0px 0px 1px;
+    width: 49px;
     border-radius: 5px;
     border: 1px solid black;
     background-color: rgb(241, 241, 241);
+    text-align: center;
+    margin: 3px;
 }
 
 div.operador{
     display: inline-block;
     font-size: 3em;
-    padding: 10px 14px;
-    margin: 5px 0px 0px 1px;
+    width: 49px;
     border-radius: 5px;
     border: 1px solid black;
     background-color: rgb(228, 227, 227);
+    text-align: center;
+    margin: 3px;
 }
 
-div#l2 > div#potencia{
-    width: 30px;
-}
-
-div#l3{
-    height: 93px;
-}
-
-div#l3 > div#igual{
+div#igual{
     position: absolute;
-    margin-left: 5px;
-    padding: 56.5px 13px;
+    padding: 36px 0px;
+    margin-left: 8px;
 }
 
 div#l4{
     display: inline-block;
-    
 }
 
-div#l4 > div#num0{
-    width: 87px;
-    text-align: center;
-}
-
-div#l4 > div#virgula{
-    width: 26px;
-    text-align: center;
-}
-
-div#l4 > div#adicao{
-    padding: 29px 13px 14px 13px;
-    font-size: 1.9em;
-    text-align: center;
+div#num0{
+    width: 110px;
 }
 
 div.num:hover{
