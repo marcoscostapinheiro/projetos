@@ -17,9 +17,9 @@ div#calculadora{
     top: 320px;
     left: 50%;
     transform: translate(-50%, -260px);
+    padding: 10px 0px 10px 10px;
     width: 338px;
-    height: 482px;
-    padding: 10px;
+    max-height: 485px;
     background-color: rgb(138, 153, 158);
     border: 2px solid black;
     border-radius: 5px;
