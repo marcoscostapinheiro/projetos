@@ -15,32 +15,36 @@
                     
                 </div>
                 <div id="botoes">
-                    <div id="l1">
-                        <div class="num" onclick="addNum()">7</div>
-                        <div class="num" onclick="addNum()">8</div>
-                        <div class="num" onclick="addNum()">9</div>
-                        <div class="operador" onclick="addOp()">/</div>
-                        <div class="operador" onclick="clear()">C</div>
-                    </div>
-                    <div id="l2">
-                        <div class="num" onclick="addNum()">4</div>
-                        <div class="num" onclick="addNum()">5</div>
-                        <div class="num" onclick="addNum()">6</div>
-                        <div class="operador" onclick="addOp()">*</div>
-                        <div class="operador" id="potencia" onclick="addOp()">^</div>
-                    </div>
-                    <div id="l3">
-                        <div class="num" onclick="addNum()">1</div>
-                        <div class="num" onclick="addNum()">2</div>
-                        <div class="num" onclick="addNum()">3</div>
-                        <div class="operador" onclick="addOp()">-</div>
-                        <div class="operador" id="igual" onclick="somar()">=</div>
-                    </div>
-                    <div id="l4">
-                        <div class="num" id="num0" onclick="addNum()">0</div>
-                        <div class="operador" id="virgula" onclick="virgula()">,</div>
-                        <div class="operador" id="adicao" onclick="addOp()">+</div>
-                    </div>
+                    <table>
+                        <tbody>
+                            <tr id="l1">
+                                <td class="nums">7</td>
+                                <td class="nums">8</td>
+                                <td class="nums">9</td>
+                                <td class="operadores">/</td>
+                                <td class="operadores">C</td>
+                            </tr>
+                            <tr id="l2">
+                                <td class="nums">4</td>
+                                <td class="nums">5</td>
+                                <td class="nums">6</td>
+                                <td class="operadores">*</td>
+                                <td class="operadores">^</td>
+                            </tr>
+                            <tr id="l3">
+                                <td class="nums">1</td>
+                                <td class="nums">2</td>
+                                <td class="nums">3</td>
+                                <td class="operadores">-</td>
+                                <td rowspan="2" class="operadores">=</td>
+                            </tr>
+                            <tr id="l4">
+                                <td colspan="2" class="nums">0</td>
+                                <td class="operadores">,</td>
+                                <td class="operadores">+</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
