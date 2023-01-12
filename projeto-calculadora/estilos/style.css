@@ -64,13 +64,12 @@ div.operador{
 }
 
 div#igual{
-    position: absolute;
-    padding: 36px 0px;
-    margin-left: 8px;
+    height: 135px;
 }
 
 div#l4{
-    display: inline-block;
+    position: absolute;
+    top: 216px;
 }
 
 div#num0{
