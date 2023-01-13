@@ -1,47 +1,49 @@
 function insert(num){
     var tela = document.getElementById('tela').innerText
-    var last = tela.slice(-2)
-    var comb = [
-        '//',
-        '/*',
-        '/-',
-        '/+',
-        '/.',
-        '**',
-        '*/',
-        '*-',
-        '*+',
-        '*.',
-        '--',
-        '-/',
-        '-*',
-        '-+',
-        '-.',
-        '++',
-        '+/',
-        '+*',
-        '+-',
-        '+.',
-        '..',
-        './',
-        '.*',
-        '.-',
-        '.+'
+    var last = tela.slice(-1)
+    var op = [
+        '/',
+        '*',
+        '-',
+        '+',
+        '.'
     ]
 
-    if(tela == false && num == '/'){
-        window.alert('Digite um número primeiro')
-    }
-
-    for(var pos in comb){
-        if(comb[pos] == last){
-            window.alert('Não pode utilizar dois operadores juntos')
-            num = ''
-            document.getElementById('tela').innerText = tela.substring(0, tela.length - 1)
+    function verTela(){
+        for(var pos in op){
+            if(tela.length == 0 && num == op[pos]){
+                num = ''
+                window.alert('Adicione um número primeiro')
+            }
         }
     }
 
-    document.getElementById('tela').innerText += num
+    function opsIguais(){
+        for(var pos in op){
+            for(var pos2 in op){
+                if(num == op[pos] && last == op[pos2]){
+                    window.alert('Não pode utilizar dois operadores juntos')
+                    num = ''
+                }
+            }
+        }
+    }
+
+    
+
+    if(verTela()){
+        
+    }
+
+    if(opsIguais()){
+        
+    }
+
+    else{
+        document.getElementById('tela').innerText += num
+    }
+    
+    
 
     
 }
