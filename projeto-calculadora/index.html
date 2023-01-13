@@ -18,30 +18,30 @@
                     <table>
                         <tbody>
                             <tr id="l1">
-                                <td class="nums">7</td>
-                                <td class="nums">8</td>
-                                <td class="nums">9</td>
-                                <td class="operadores">/</td>
-                                <td class="operadores">C</td>
+                                <td class="nums" onclick="insert('7')">7</td>
+                                <td class="nums" onclick="insert('8')">8</td>
+                                <td class="nums" onclick="insert('9')">9</td>
+                                <td class="operadores" onclick="insert('/')">/</td>
+                                <td class="operadores" onclick="clean()">C</td>
                             </tr>
                             <tr id="l2">
-                                <td class="nums">4</td>
-                                <td class="nums">5</td>
-                                <td class="nums">6</td>
-                                <td class="operadores">*</td>
-                                <td class="operadores">^</td>
+                                <td class="nums" onclick="insert('4')">4</td>
+                                <td class="nums" onclick="insert('5')">5</td>
+                                <td class="nums" onclick="insert('6')">6</td>
+                                <td class="operadores" onclick="insert('*')">*</td>
+                                <td class="operadores" onclick="back()"><</td>
                             </tr>
                             <tr id="l3">
-                                <td class="nums">1</td>
-                                <td class="nums">2</td>
-                                <td class="nums">3</td>
-                                <td class="operadores">-</td>
-                                <td rowspan="2" class="operadores">=</td>
+                                <td class="nums" onclick="insert('1')">1</td>
+                                <td class="nums" onclick="insert('2')">2</td>
+                                <td class="nums" onclick="insert('3')">3</td>
+                                <td class="operadores" onclick="insert('-')">-</td>
+                                <td rowspan="2" class="operadores" onclick="calc()">=</td>
                             </tr>
                             <tr id="l4">
-                                <td colspan="2" class="nums">0</td>
-                                <td class="operadores">,</td>
-                                <td class="operadores">+</td>
+                                <td colspan="2" class="nums" onclick="insert('0')">0</td>
+                                <td class="operadores" onclick="insert('.')">.</td>
+                                <td class="operadores" onclick="insert('+')">+</td>
                             </tr>
                         </tbody>
                     </table>
