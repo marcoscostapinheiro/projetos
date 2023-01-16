@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Calculadora</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
                                 <td class="nums" onclick="insert('5')">5</td>
                                 <td class="nums" onclick="insert('6')">6</td>
                                 <td class="operadores" onclick="insert('*')">*</td>
-                                <td class="operadores" onclick="back()"><</td>
+                                <td id="backspace" class="operadores" onclick="back()"><span class="material-symbols-outlined">backspace</span></td>
                             </tr>
                             <tr id="l3">
                                 <td class="nums" onclick="insert('1')">1</td>
