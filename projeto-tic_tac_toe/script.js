@@ -83,6 +83,7 @@ function victory(){
     }
 
     else if(cont == 9){
+        cont = 0
         window.alert('EMPATE')
         setTimeout(function(){
             for(var pos in jogadas){
