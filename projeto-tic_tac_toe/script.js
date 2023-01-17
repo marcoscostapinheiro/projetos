@@ -7,7 +7,6 @@ var jogadas = [
     '', '', ''
 ]
 var cont = 0
-var comb = 0
 
 if(sort == 0){
     vez = 'X'
@@ -43,15 +42,11 @@ function insert(c){
     }
 
     victory()
-    draw()
     
 }
 
 function victory(){
     if(jogadas[0] == 'X' && jogadas[1] == 'X' && jogadas[2] == 'X' || jogadas[3] == 'X' && jogadas[4] == 'X' && jogadas[5] == 'X' || jogadas[6] == 'X' && jogadas[7] == 'X' && jogadas[8] == 'X' || jogadas[0] == 'X' && jogadas[3] == 'X' && jogadas[6] == 'X' || jogadas[1] == 'X' && jogadas[4] == 'X' && jogadas[7] == 'X' || jogadas[2] == 'X' && jogadas[5] == 'X' && jogadas[8] == 'X' || jogadas[0] == 'X' && jogadas[4] == 'X' && jogadas[8] == 'X' || jogadas[2] == 'X' && jogadas[4] == 'X' && jogadas[6] == 'X'){
-
-        comb = 1
-
         setTimeout(function(){
             window.alert('Jogador X venceu')
         }, 100)
@@ -70,13 +65,25 @@ function victory(){
     }
 
     if(jogadas[0] == 'O' && jogadas[1] == 'O' && jogadas[2] == 'O' || jogadas[3] == 'O' && jogadas[4] == 'O' && jogadas[5] == 'O' || jogadas[6] == 'O' && jogadas[7] == 'O' && jogadas[8] == 'O' || jogadas[0] == 'O' && jogadas[3] == 'O' && jogadas[6] == 'O' || jogadas[1] == 'O' && jogadas[4] == 'O' && jogadas[7] == 'O' || jogadas[2] == 'O' && jogadas[5] == 'O' && jogadas[8] == 'O' || jogadas[0] == 'O' && jogadas[4] == 'O' && jogadas[8] == 'O' || jogadas[2] == 'O' && jogadas[4] == 'O' && jogadas[6] == 'O'){
-
-        comb = 1
-
         setTimeout(function(){
             window.alert('Jogador O venceu')
         }, 100)
 
+        setTimeout(function(){
+            for(var pos in jogadas){
+                document.getElementById(pos).innerText = ''
+            }
+        }, 100)
+
+        jogadas = [
+            '', '', '',
+            '', '', '',
+            '', '', ''
+        ]
+    }
+
+    else if(cont == 9){
+        window.alert('EMPATE')
         setTimeout(function(){
             for(var pos in jogadas){
                 document.getElementById(pos).innerText = ''
@@ -105,25 +112,7 @@ function change(){
     }
 }
 
-function draw(){
-    if(cont == 9 && comb == 0){
-        setTimeout(function(){
-            window.alert('EMPATE')
-        }, 100)
 
-        setTimeout(function(){
-            for(var pos in jogadas){
-                document.getElementById(pos).innerText = ''
-            }
-        }, 100)
-
-        jogadas = [
-            '', '', '',
-            '', '', '',
-            '', '', ''
-        ]
-    }
-}
 
 
 
