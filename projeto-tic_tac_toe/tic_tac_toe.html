@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style-game.css">
     <title>Tic Tac Toe</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        h2{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    </style>
 </head>
 <body>
-    <h2>Aqui será feito o jogo</h2>
+    <header><p id="player">Vez de</p></header>
+    <main>
+        <section>
+            <table>
+                <tr class="campo">
+                    <td id="0" onclick="insert('0')"> </td>
+                    <td id="1" onclick="insert('1')"> </td>
+                    <td id="2" onclick="insert('2')"> </td>
+                </tr>
+                <tr class="campo">
+                    <td id="3" onclick="insert('3')"> </td>
+                    <td id="4" onclick="insert('4')"> </td>
+                    <td id="5" onclick="insert('5')"> </td>
+                </tr>
+                <tr class="campo">
+                    <td id="6" onclick="insert('6')"> </td>
+                    <td id="7" onclick="insert('7')"> </td>
+                    <td id="8" onclick="insert('8')"> </td>
+                </tr>
+            </table>
+        </section>
+    </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
