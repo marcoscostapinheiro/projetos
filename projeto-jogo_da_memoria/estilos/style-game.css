@@ -23,42 +23,46 @@ header > h1{
 }
 
 #interface{
-    margin: auto;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     margin-top: 50px;
-    width: 351px;
+    width: 370px;
 }
 
-#l1 div{
+.card{
+    position: relative;
     display: inline-block;
-    background-color: white;
-    width: 110px;
-    height: 110px;
-    margin: 2px;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
 }
 
-#l2 div{
-    display: inline-block;
-    background-color: white;
-    width: 110px;
-    height: 110px;
-    margin: 2px;
+.face{
+    width: 90px;
+    aspect-ratio: 3/4;
+    
 }
 
-#l3 div{
-    display: inline-block;
-    background-color: white;
-    width: 110px;
-    height: 110px;
-    margin: 2px;
+.back{
+    position: absolute;
+    background: white url(../imagens/face-back.jpg) center no-repeat fixed;
+    background-size: cover;
+    backface-visibility: hidden;
+    
 }
 
-#l4 div{
-    display: inline-block;
+.front{
     background-color: white;
-    width: 110px;
-    height: 110px;
-    margin: 2px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
+
+.card:active{
+    transform: rotateY(180deg);
+}
+
+
 
 
 
