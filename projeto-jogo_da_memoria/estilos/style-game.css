@@ -28,7 +28,7 @@ header > h1{
     left: 50%;
     transform: translate(-50%);
     margin-top: 50px;
-    width: 370px;
+    width: 352px;
 }
 
 .card{
@@ -39,7 +39,7 @@ header > h1{
 }
 
 .face{
-    width: 90px;
+    width: 88px;
     aspect-ratio: 3/4;
     
 }
