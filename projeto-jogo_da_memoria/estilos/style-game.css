@@ -28,6 +28,7 @@ header > h1{
 }
 
 #interface{
+    display: none;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -100,12 +101,12 @@ header > h1{
 }
 
 #fim-de-jogo > p{
-    margin: 5px 0px 10px 0px;
+    margin: 15px 0px 10px 0px;
     color: #17c2b4;
     -webkit-text-stroke-width: 2px; 
     -webkit-text-stroke-color: black;
     font-family: get-schwifty;
-    font-size: 3em;
+    font-size: 2.5em;
     width: 100%;
 }
 
@@ -124,9 +125,7 @@ header > h1{
     font-weight: bold;
 }
 
-.out{
-    display: none;
-}
+
 
 
 
