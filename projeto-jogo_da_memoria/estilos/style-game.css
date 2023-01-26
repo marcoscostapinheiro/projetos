@@ -58,9 +58,11 @@ header > h1{
     backface-visibility: hidden;
 }
 
-.card:active{
+.card-reveal{
     transform: rotateY(180deg);
 }
+
+
 
 
 
