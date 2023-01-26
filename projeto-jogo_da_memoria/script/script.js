@@ -70,6 +70,17 @@ var revealCard = ( {target} ) => {
     }
 }
 
+var temporarilyReveal = () => {
+    for(c = 0; c < 16; c++){
+        interface.children[c].classList.add('card-reveal')
+    }
+    setTimeout(function(){
+        for(c = 0; c < 16; c++){
+            interface.children[c].classList.remove('card-reveal')
+        }
+    }, 1500)
+}
+
 var createElement = (tag, className) => {
     var element = document.createElement(tag)
     element.className = className
@@ -91,6 +102,7 @@ var createCard = () => {
         front.style.backgroundSize = 'cover'
 
         card.addEventListener('click', revealCard)
+        
     }
 }
 
@@ -108,7 +120,7 @@ var loadGame = () => {
     duplicateArray()
     shuffledArray()
     createCard()
+    temporarilyReveal()
 }
 
 loadGame()
-
