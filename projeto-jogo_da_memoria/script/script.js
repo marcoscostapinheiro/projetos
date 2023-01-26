@@ -1,5 +1,5 @@
 var interface = document.getElementById('interface')
-
+var fimDeJogo = document.getElementById('container')
 var characters = ['morty',
     'rick',
     'summer',
@@ -18,15 +18,23 @@ var checkGame = () => {
     if(combination === 8){
         combination = 0
         setTimeout(function(){
-            window.alert('VOCÊ ENCONTROU TODAS AS COMBINAÇÕES')
+            interface.classList.add('out')
+            document.getElementById('header').classList.add('out')
+            fimDeJogo.classList.remove('out')
         }, 400)
         setTimeout(function(){
             for(item in interface.children){
-                interface.children[item].classList.remove('card-reveal')
                 interface.children[item].lastChild.classList.remove('disabled-card')
             }
         }, 400)
+        setTimeout(function(){
+            for(c = 0; c < 16; c++){
+                interface.children[c].classList.remove('card-reveal')
+            }
+        }, 2500)
+        
     }
+    
     
 }
 
@@ -117,10 +125,11 @@ var shuffledArray = () => {
 }
 
 var loadGame = () => {
+    fimDeJogo.classList.add('out')
     duplicateArray()
     shuffledArray()
     createCard()
-    temporarilyReveal()
 }
 
 loadGame()
+temporarilyReveal()
