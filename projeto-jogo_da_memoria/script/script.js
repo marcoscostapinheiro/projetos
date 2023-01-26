@@ -23,6 +23,7 @@ var checkGame = () => {
         setTimeout(function(){
             for(item in interface.children){
                 interface.children[item].classList.remove('card-reveal')
+                interface.children[item].lastChild.classList.remove('disabled-card')
             }
         }, 400)
     }
@@ -34,12 +35,14 @@ var checkCombination = () => {
     var secondCharacter = secondCard.getAttribute('data-character')
 
     if(firstCharacter === secondCharacter){
-        firstCard.classList.add('found')
-        secondCard.classList.add('found')
-        firstCard = ''
-        secondCard = ''
-        combination ++
-        checkGame()
+        setTimeout(function(){
+            firstCard.lastChild.classList.add('disabled-card')
+            secondCard.lastChild.classList.add('disabled-card')
+            firstCard = ''
+            secondCard = ''
+            combination ++
+            checkGame()
+        }, 300)
     }
     else{
         setTimeout(function(){
