@@ -28,7 +28,6 @@ header > h1{
 }
 
 #interface{
-    display: none;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -123,6 +122,10 @@ header > h1{
     margin: 30px;
     background-color: #17c2b4;
     font-weight: bold;
+}
+
+.out{
+    display: none;
 }
 
 
